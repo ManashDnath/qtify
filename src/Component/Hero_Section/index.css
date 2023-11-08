@@ -1,0 +1,20 @@
+#S1{
+    background-color: var(--css-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 272px;
+    
+}
+#text{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--css-white);
+    text-align: center;
+}
+#headphn-logo{
+    width: 212px;
+    height: 212px;
+    
+}
