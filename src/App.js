@@ -15,6 +15,7 @@ function App() {
 
 useEffect(()=>{
   axios.get(`${EndPoint}/albums/top`).then(({data})=>{setTopAlbums(data)})
+  axios.get(`${EndPoint}/albums/new`).then(({data})=>{setNewAlbums(data)})
 },[]);
 
   return (
@@ -22,6 +23,7 @@ useEffect(()=>{
       <Navbar/>
       <Herosection/>
       <Section title="Top Albums" data={topAlbums}/>
+      <Section title="New Albums" data={newAlbums}/>
     </>
   );
 }
