@@ -7,8 +7,10 @@
 }
 
 body{
+  background-color: var(--css-black);
   font-family: 'Montserrat', sans-serif;
-font-family: 'Poppins', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  
   
 
 }
