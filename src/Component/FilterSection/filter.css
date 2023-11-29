@@ -1,0 +1,15 @@
+.title{
+    font-size: 20px;
+    font-weight: 600;
+   color: var(--css-white);
+   
+}
+
+.tab{
+    color: white !important;
+    font-weight: bold !important;
+}
+
+.filter-btn{
+    padding-bottom: 10px !important;
+}

@@ -1,5 +1,5 @@
 .container-section{
-    padding: 32px;
+    padding: 12px 34px;
     
 }
 
@@ -7,7 +7,6 @@
     font-size: 20px;
     font-weight: 600;
    color: var(--css-white);
-   margin-bottom: 18px;
 }
 
 .Albhum{

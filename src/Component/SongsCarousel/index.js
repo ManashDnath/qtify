@@ -6,10 +6,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import Card from '../Card';
+import Card from '../SongsCard';
 import './carousel.css';
 
-export default function Carousel({image}){
+export default function SongsCarousel({image}){
 
     return <div className='carousel-container'>
       <Swiper
@@ -22,7 +22,7 @@ export default function Carousel({image}){
        {image.map(res => <SwiperSlide  key={res.id}> 
             <Card imgSrc={res.image} 
                   label={res.title} 
-                  followersCount={res.follows}/> </SwiperSlide>)}             
+                  followersCount={res.likes}/> </SwiperSlide>)}             
       </Swiper>
           <div className='next-button arrow'><img src="/rightarr.png" alt='imagelogo'/></div>
           <div className='prev-button arrow'><img src="/leftIcon.png" alt='imagelogo'/></div>
