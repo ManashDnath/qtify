@@ -6,6 +6,7 @@ import Navbar from './Component/Navbar/Nav'
 import Herosection from './Component/Hero_Section'
 import Section  from './Component/Section';
 import Filter from './Component/FilterSection';
+import FAQ from './Component/FAQ';
 
 function App() {
 
@@ -34,11 +35,12 @@ useEffect(()=>{
 },[]);
 
   return (
-    <>
+    <div>
       <Navbar/>
       <Herosection/>
       <Section title="Top Albums" data={topAlbums}/>
       <Section title="New Albums" data={newAlbums}/>
+      <div className='horizontal-line'></div>
       <Filter title="Songs" data={filteredSongs} genres={genres} executeFilter={(genre)=>{
           if(genre === 'all'){
             setFilteredSongs(songs)
@@ -46,7 +48,9 @@ useEffect(()=>{
             setFilteredSongs(songs.filter(song => song.genre.key === genre))
           }
         }}/>
-    </>
+      <div className='horizontal'></div>  
+      <FAQ/>
+    </div>
   );
 }
 

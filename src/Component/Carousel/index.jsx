@@ -9,9 +9,12 @@ import 'swiper/css/navigation';
 import Card from '../Card';
 import './carousel.css';
 
+
+
 export default function Carousel({image}){
 
     return <div className='carousel-container'>
+      
       <Swiper
         modules={[Virtual, Navigation, Pagination]}
         slidesPerView={8}
@@ -19,7 +22,7 @@ export default function Carousel({image}){
         navigation={{nextEl:'.next-button', prevEl:'.prev-button'}}
         
       >
-       {image.map(res => <SwiperSlide  key={res.id}> 
+       {image.map(res => <SwiperSlide  key={res.id} songs={res.songs.length}> 
             <Card imgSrc={res.image} 
                   label={res.title} 
                   followersCount={res.follows}/> </SwiperSlide>)}             

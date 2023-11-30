@@ -10,7 +10,7 @@ export default function SongsCard({imgSrc,label,followersCount}){
                 </div>
             <div class="card-content">
                 <span class="card-content-pill">
-                    {followersCount} likes
+                    {followersCount} Likes
                 </span>
             </div>
         </div>

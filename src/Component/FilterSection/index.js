@@ -9,7 +9,8 @@ export default function Filter({title, data, genres, executeFilter}){
     
 const[index,setIndex]=useState(0); 
 
-return <div class="container-section">  
+return <div class="container-section">
+       
                 <h1 className="title">{title}</h1>
     <Tabs
         value={index}
